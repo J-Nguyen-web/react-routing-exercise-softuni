@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import { Route, Routes } from 'react-router'
-import './App.css'
+import { Route, Routes } from 'react-router-dom'
 import Footer from './component/footer/Footer.jsx'
 import Header from './component/header/Header.jsx'
 import Home from './component/home/Home.jsx'
