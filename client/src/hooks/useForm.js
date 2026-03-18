@@ -9,8 +9,13 @@ export default function useForm(callback, initialValues) {
         }))
     };
 
+    const formAction = async (formData) => { // закачено е на submit form-ата   
+        await callback(values, formData)
+    }
+
     return (
         values,
-        changeHandler
+        changeHandler,
+        formAction
     );
 }
